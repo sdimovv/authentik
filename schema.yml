@@ -26106,7 +26106,11 @@ components:
           type: string
         site_key:
           type: string
+        js_url:
+          type: string
+          readOnly: true
       required:
+      - js_url
       - pending_user
       - pending_user_avatar
       - site_key
@@ -26153,7 +26157,11 @@ components:
             $ref: '#/components/schemas/FlowSet'
         public_key:
           type: string
-          description: Public key, acquired from https://www.google.com/recaptcha/intro/v3.html
+          description: Public key, acquired your captcha Provider.
+        js_url:
+          type: string
+        api_url:
+          type: string
       required:
       - component
       - meta_model_name
@@ -26176,12 +26184,18 @@ components:
         public_key:
           type: string
           minLength: 1
-          description: Public key, acquired from https://www.google.com/recaptcha/intro/v3.html
+          description: Public key, acquired your captcha Provider.
         private_key:
           type: string
           writeOnly: true
           minLength: 1
-          description: Private key, acquired from https://www.google.com/recaptcha/intro/v3.html
+          description: Private key, acquired your captcha Provider.
+        js_url:
+          type: string
+          minLength: 1
+        api_url:
+          type: string
+          minLength: 1
       required:
       - name
       - private_key
@@ -33251,12 +33265,18 @@ components:
         public_key:
           type: string
           minLength: 1
-          description: Public key, acquired from https://www.google.com/recaptcha/intro/v3.html
+          description: Public key, acquired your captcha Provider.
         private_key:
           type: string
           writeOnly: true
           minLength: 1
-          description: Private key, acquired from https://www.google.com/recaptcha/intro/v3.html
+          description: Private key, acquired your captcha Provider.
+        js_url:
+          type: string
+          minLength: 1
+        api_url:
+          type: string
+          minLength: 1
     PatchedCertificateKeyPairRequest:
       type: object
       description: CertificateKeyPair Serializer
