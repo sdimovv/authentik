@@ -145,6 +145,10 @@ msgstr "Solicitudes de API"
 msgid "API Token (can be used to access the API programmatically)"
 msgstr "Token de API (se puede usar para acceder a la API mediante programación)"
 
+#: src/admin/stages/captcha/CaptchaStageForm.ts
+msgid "API URL"
+msgstr ""
+
 #: src/elements/messages/Middleware.ts
 msgid "API request failed"
 msgstr "Solicitud de API fallida"
@@ -306,6 +310,7 @@ msgid "Advanced protocol settings"
 msgstr "Configuraciones de protocolo avanzada"
 
 #: src/admin/policies/password/PasswordPolicyForm.ts
+#: src/admin/stages/captcha/CaptchaStageForm.ts
 msgid "Advanced settings"
 msgstr "Configuraciones avanzadas"
 
@@ -620,6 +625,7 @@ msgstr "URL de autorización"
 msgid "Authorization flow"
 msgstr "Flujo de autorización"
 
+#: src/admin/admin-overview/charts/AdminLoginAuthorizeChart.ts
 #: src/elements/charts/ApplicationAuthorizeChart.ts
 msgid "Authorizations"
 msgstr "Autorizaciones"
@@ -2225,7 +2231,7 @@ msgstr ""
 msgid "External host"
 msgstr "Servidor externo"
 
-#: src/elements/charts/AdminLoginsChart.ts
+#: src/admin/admin-overview/charts/AdminLoginAuthorizeChart.ts
 #: src/elements/charts/UserChart.ts
 msgid "Failed Logins"
 msgstr "inicios de sesión fallidos"
@@ -2936,6 +2942,10 @@ msgstr "Emisor"
 msgid "Issuer mode"
 msgstr "Modo emisor"
 
+#: src/admin/stages/captcha/CaptchaStageForm.ts
+msgid "JS URL"
+msgstr ""
+
 #: src/admin/sources/oauth/OAuthSourceForm.ts
 msgid "JSON Web Key URL. Keys from the URL will be used to validate JWTs from this source."
 msgstr ""
@@ -3215,6 +3225,7 @@ msgstr ""
 #~ msgstr "Idioma"
 
 #: src/admin/applications/ApplicationCheckAccessForm.ts
+#: src/admin/flows/FlowImportForm.ts
 #: src/admin/policies/PolicyTestForm.ts
 msgid "Log messages"
 msgstr ""
@@ -3244,6 +3255,9 @@ msgid "Logins"
 msgstr "Inicios de sesión"
 
 #: src/admin/admin-overview/AdminOverviewPage.ts
+msgid "Logins and authorizations over the last 24 hours"
+msgstr ""
+
 #: src/admin/applications/ApplicationViewPage.ts
 msgid "Logins over the last 24 hours"
 msgstr "Inicios de sesión en las últimas 24 horas"
@@ -3615,6 +3629,7 @@ msgstr "Nginx (independiente)"
 #: src/admin/applications/ApplicationCheckAccessForm.ts
 #: src/admin/blueprints/BlueprintListPage.ts
 #: src/admin/crypto/CertificateKeyPairListPage.ts
+#: src/admin/flows/FlowImportForm.ts
 #: src/admin/groups/GroupListPage.ts
 #: src/admin/groups/MemberSelectModal.ts
 #: src/admin/groups/RelatedGroupList.ts
@@ -3670,6 +3685,7 @@ msgid "No integration active"
 msgstr "Sin integración activa"
 
 #: src/admin/applications/ApplicationCheckAccessForm.ts
+#: src/admin/flows/FlowImportForm.ts
 #: src/admin/policies/PolicyTestForm.ts
 msgid "No log messages."
 msgstr ""
@@ -5317,11 +5333,12 @@ msgid "Subject-alt name"
 msgstr "Nombre de asunto ALT"
 
 #: src/admin/blueprints/BlueprintListPage.ts
+#: src/admin/flows/FlowImportForm.ts
 #: src/admin/system-tasks/SystemTaskListPage.ts
 msgid "Successful"
 msgstr "Éxito"
 
-#: src/elements/charts/AdminLoginsChart.ts
+#: src/admin/admin-overview/charts/AdminLoginAuthorizeChart.ts
 #: src/elements/charts/UserChart.ts
 msgid "Successful Logins"
 msgstr "Inicios de sesión exitosos"
@@ -5949,8 +5966,12 @@ msgid "This stage can be included in enrollment flows to accept invitations."
 msgstr "Esta etapa se puede incluir en los flujos de inscripción para aceptar invitaciones."
 
 #: src/admin/stages/captcha/CaptchaStageForm.ts
-msgid "This stage checks the user's current session against the Google reCaptcha service."
-msgstr "En esta etapa, se comprueba la sesión actual del usuario con el servicio Google reCAPTCHA."
+msgid "This stage checks the user's current session against the Google reCaptcha (or compatible) service."
+msgstr ""
+
+#: src/admin/stages/captcha/CaptchaStageForm.ts
+#~ msgid "This stage checks the user's current session against the Google reCaptcha service."
+#~ msgstr "En esta etapa, se comprueba la sesión actual del usuario con el servicio Google reCAPTCHA."
 
 #: src/admin/policies/reputation/ReputationPolicyForm.ts
 msgid "Threshold"
@@ -6176,6 +6197,10 @@ msgstr "URL a la que se envía la solicitud de inicio de sesión inicial."
 msgid "URL the user is redirect to to consent the authorization."
 msgstr "URL a la que se redirige al usuario para dar su consentimiento a la autorización."
 
+#: src/admin/stages/captcha/CaptchaStageForm.ts
+msgid "URL to fetch JavaScript from, defaults to recaptcha. Can be replaced with any compatible alternative."
+msgstr ""
+
 #: src/admin/sources/oauth/OAuthSourceForm.ts
 msgid "URL used by authentik to get user information."
 msgstr "URL utilizada por authentik para obtener información del usuario."
@@ -6187,6 +6212,10 @@ msgstr "URL utilizada por authentik para recuperar tokens."
 #: src/admin/sources/oauth/OAuthSourceForm.ts
 msgid "URL used to request the initial token. This URL is only required for OAuth 1."
 msgstr "URL utilizada para solicitar el token inicial. Esta URL solo es necesaria para OAuth 1."
+
+#: src/admin/stages/captcha/CaptchaStageForm.ts
+msgid "URL used to validate captcha response, defaults to recaptcha. Can be replaced with any compatible alternative."
+msgstr ""
 
 #: src/admin/applications/wizard/link/TypeLinkApplicationWizardPage.ts
 msgid "URL which will be opened when a user clicks on the application."
@@ -6957,6 +6986,7 @@ msgstr ""
 
 #: src/admin/applications/ApplicationCheckAccessForm.ts
 #: src/admin/blueprints/BlueprintListPage.ts
+#: src/admin/flows/FlowImportForm.ts
 #: src/admin/groups/GroupListPage.ts
 #: src/admin/groups/MemberSelectModal.ts
 #: src/admin/groups/RelatedGroupList.ts

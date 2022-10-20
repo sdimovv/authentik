@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 19:21+0000\n"
+"POT-Creation-Date: 2022-10-20 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,27 +145,27 @@ msgstr ""
 msgid "Flow to use when enrolling new users."
 msgstr ""
 
-#: authentik/core/models.py:590
+#: authentik/core/models.py:605
 msgid "Token"
 msgstr ""
 
-#: authentik/core/models.py:591
+#: authentik/core/models.py:606
 msgid "Tokens"
 msgstr ""
 
-#: authentik/core/models.py:633
+#: authentik/core/models.py:648
 msgid "Property Mapping"
 msgstr ""
 
-#: authentik/core/models.py:634
+#: authentik/core/models.py:649
 msgid "Property Mappings"
 msgstr ""
 
-#: authentik/core/models.py:670
+#: authentik/core/models.py:685
 msgid "Authenticated Session"
 msgstr ""
 
-#: authentik/core/models.py:671
+#: authentik/core/models.py:686
 msgid "Authenticated Sessions"
 msgstr ""
 
@@ -358,7 +358,7 @@ msgstr ""
 msgid "Task has not been run yet."
 msgstr ""
 
-#: authentik/flows/api/flows.py:273
+#: authentik/flows/api/flows.py:320
 #, python-format
 msgid "Flow not applicable to current user/request: %(messages)s"
 msgstr ""
@@ -603,11 +603,11 @@ msgstr ""
 msgid "Policy Bindings"
 msgstr ""
 
-#: authentik/policies/models.py:181
+#: authentik/policies/models.py:187
 msgid "Policy"
 msgstr ""
 
-#: authentik/policies/models.py:182
+#: authentik/policies/models.py:188
 msgid "Policies"
 msgstr ""
 
@@ -1516,21 +1516,19 @@ msgstr ""
 msgid "WebAuthn Devices"
 msgstr ""
 
+#: authentik/stages/captcha/models.py:14
+msgid "Public key, acquired your captcha Provider."
+msgstr ""
+
 #: authentik/stages/captcha/models.py:15
-msgid ""
-"Public key, acquired from https://www.google.com/recaptcha/intro/v3.html"
+msgid "Private key, acquired your captcha Provider."
 msgstr ""
 
-#: authentik/stages/captcha/models.py:18
-msgid ""
-"Private key, acquired from https://www.google.com/recaptcha/intro/v3.html"
-msgstr ""
-
-#: authentik/stages/captcha/models.py:39
+#: authentik/stages/captcha/models.py:38
 msgid "Captcha Stage"
 msgstr ""
 
-#: authentik/stages/captcha/models.py:40
+#: authentik/stages/captcha/models.py:39
 msgid "Captcha Stages"
 msgstr ""
 
@@ -1710,11 +1708,11 @@ msgstr ""
 msgid "Identification Stages"
 msgstr ""
 
-#: authentik/stages/identification/stage.py:172
+#: authentik/stages/identification/stage.py:184
 msgid "Log in"
 msgstr ""
 
-#: authentik/stages/identification/stage.py:173
+#: authentik/stages/identification/stage.py:185
 msgid "Continue"
 msgstr ""
 
